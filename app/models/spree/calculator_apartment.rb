@@ -1,5 +1,5 @@
 module Spree
-  class CalculatorHotel < BaseCalculator
+  class CalculatorApartment < BaseCalculator
 
     def adults_range
       (1..3).to_a

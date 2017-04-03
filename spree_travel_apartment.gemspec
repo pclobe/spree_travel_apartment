@@ -6,15 +6,15 @@ versions = yaml['gems']
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_travel_hotel'
+  s.name        = 'spree_travel_apartment'
   s.version     = versions['spree_travel']
-  s.summary     = 'Hotel into spree'
-  s.description = 'Add hotel logic into spree'
+  s.summary     = 'Apartment into spree'
+  s.description = 'Add apartment logic into spree'
   s.required_ruby_version = '>= 1.9.3'
 
   s.authors   = ['Pedro Quintero', 'Miguel Sancho', 'Cesar Lage', 'Raul Perez-Alejo Neyra']
   s.email     = 'info@openjaf.com'
-  s.homepage  = 'http://github.com/openjaf/spree_travel_hotel'
+  s.homepage  = 'http://github.com/openjaf/spree_travel_apartment'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")

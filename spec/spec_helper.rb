@@ -28,8 +28,8 @@ require 'spree/testing_support/controller_requests'
 require 'spree/testing_support/authorization_helpers'
 require 'spree/testing_support/url_helpers'
 
-# Requires factories defined in lib/spree_travel_hotel/factories.rb
-require 'spree_travel_hotel/factories'
+# Requires factories defined in lib/spree_travel_apartment/factories.rb
+require 'spree_travel_apartment/factories'
 require 'spree_travel_core/factories'
 
 RSpec.configure do |config|

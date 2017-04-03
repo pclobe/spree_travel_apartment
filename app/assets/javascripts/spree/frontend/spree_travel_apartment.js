@@ -1,6 +1,6 @@
 //$(document).ready(function() {
-//    $("#hotel_destination").autocomplete({
-//        source: '/taxons/hotel_autocomplete.json',
+//    $("#apartment_destination").autocomplete({
+//        source: '/taxons/apartment_autocomplete.json',
 //        messages: {
 //          noResults: '',
 //          results: function() {}

@@ -1,6 +1,6 @@
 FactoryGirl.define do
 
-  factory :hotel_context, class: Spree::Context do
+  factory :apartment_context, class: Spree::Context do
     ignore do
       variant ""
       adults 1
@@ -12,7 +12,7 @@ FactoryGirl.define do
     line_item
     after(:create) { |context, evaluator|
       context_params = {}
-      context_params['product_type'] = 'hotel'
+      context_params['product_type'] = 'apartment'
       context_params['adult'] = evaluator.adults
       context_params['child'] = evaluator.childs
       context_params['plan'] = evaluator.plan
@@ -25,7 +25,7 @@ FactoryGirl.define do
 
   factory :context_option_value, class: Spree::ContextOptionValue do
     association :option_value, factory: :option_value_decorated
-    association :context, factory: :hotel_context
+    association :context, factory: :apartment_context
   end
 
 end

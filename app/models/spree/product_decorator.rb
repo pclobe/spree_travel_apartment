@@ -2,12 +2,12 @@
 module Spree
   Product.class_eval do
 
-    def hotel?
-      self.product_type == Spree::ProductType.find_by_name('hotel')
+    def apartment?
+      self.product_type == Spree::ProductType.find_by_name('apartment')
     end
 
-    def self.hotels
-      where(product_type_id: Spree::ProductType.find_by_name('hotel').id )
+    def self.apartments
+      where(product_type_id: Spree::ProductType.find_by_name('apartment').id )
     end
 
   end

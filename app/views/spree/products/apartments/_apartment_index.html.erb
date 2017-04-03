@@ -14,7 +14,7 @@
       <%= link_to(new_params, :class => 'info', :itemprop => "name", :title => product.name) do %>
           <%= product.name %>
       <%end%>
-      <span class="stars-<%= hotel_stars(product) %>"></span>
+      <span class="stars-<%= apartment_stars(product) %>"></span>
     </div>
     <div class="product-destination">
       <%= link_to product.destination, nested_taxons_path(product.destination_taxon.permalink)  %>

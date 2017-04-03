@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :rate_hotel, class: Spree::Rate do
+  factory :rate_apartment, class: Spree::Rate do
     ignore do
       start_date Date.today - (365 / 2)
       end_date Date.today + (365 / 2)

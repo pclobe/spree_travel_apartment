@@ -3,7 +3,7 @@
 
 en:
   spree:
-    hotel: Hotel
+    apartment: Apartment
     simple_room: Simple Room
     double_room: Double Room
     triple_room: Triple Room

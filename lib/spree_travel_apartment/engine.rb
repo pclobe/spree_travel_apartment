@@ -1,8 +1,8 @@
-module SpreeTravelHotel
+module SpreeTravelApartment
     class Engine < Rails::Engine
       require 'spree/core'
       isolate_namespace Spree
-      engine_name 'spree_travel_hotel'
+      engine_name 'spree_travel_apartment'
 
       config.autoload_paths += %W(#{config.root}/lib)
 
