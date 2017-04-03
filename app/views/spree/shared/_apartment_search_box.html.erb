@@ -1,9 +1,7 @@
 <%
    params["#{prefix}start_date"] ||= Time.now.to_date
    params["#{prefix}end_date"] ||= Time.now.to_date + 3
-   params["#{prefix}adult"] ||= 2
-   params["#{prefix}child"] ||= 0
-   params["#{prefix}room_count"] ||= 1
+   params["#{prefix}persons"] ||= 2
 
    if p.name.downcase == active_product
      active_tab = 'active'
