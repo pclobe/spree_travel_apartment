@@ -7,7 +7,7 @@ versions = yaml['gems']
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_travel_apartment'
-  s.version     = versions['spree_travel']
+  s.version     = '3.0.0.1'
   s.summary     = 'Apartment into spree'
   s.description = 'Add apartment logic into spree'
   s.required_ruby_version = '>= 1.9.3'
