@@ -17,19 +17,19 @@ module Spree
       list = product.variants.where(id: variant.id).first.rates
       array = []
       list.each do |r|
-      if Date.parse(r.start_date) <= Date.parse(context.start_date(options).to_s) &&
-        Date.parse(r.end_date) >= Date.parse(context.end_date(options).to_s)
-        days = context.end_date(options).to_date - context.start_date(options).to_date rescue 1
+        if Date.parse(r.start_date) <= Date.parse(context.start_date(options).to_s) &&
+            Date.parse(r.end_date) >= Date.parse(context.end_date(options).to_s)
+          days = context.end_date(options).to_date - context.start_date(options).to_date rescue 1
 
-        # TODO: what is this 'context.adult(options)'?
-        avg_price = r.send(adults_hash[context.persons(options).to_i]).to_f
-        price = context.persons(persons).to_i * avg_price * days
-        array << {price: price, rate: r.id, avg: avg_price}
+          # TODO: what is this 'context.adult(options)'?
+          avg_price = r.send(:standard).to_f
+          price = context.persons(options).to_i * avg_price * days
+          array << {price: price, rate: r.id, avg: avg_price}
         end
       end
       array
     end
-    
+
     def get_rate_price(rate, persons)
       # TODO: what is rate?
       persons.to_i * rate.send('standard').to_f

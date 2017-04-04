@@ -35,7 +35,6 @@
       <% hash = display_travel_price(product)%>
       <% if !hash.empty? %>
         <div class="price-section">
-          <span class="price"><small>MEAL PLAN:</small> <%= Spree::OptionValue.find(Spree::Rate.find(hash.first[:rate]).plan).presentation%></span><br/>
           <span class="price"><small>PER/NIGHT:</small> <%=hash.first[:price]%></span>
         </div>
         <div class="action-section">
